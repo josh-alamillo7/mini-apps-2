@@ -54,6 +54,29 @@ const handleGridClick = (grid, squareParams) => {
     
     
   }
+
+  let numberOfMines = 0;
+  grid.forEach((row) => {
+    row.forEach((cell) => {
+      if (cell[0] === 'X') {
+        numberOfMines += 1;
+      }
+    })
+  })
+
+  //check for a win
+  let squaresClicked = 0;
+  grid.forEach((row) => {
+    row.forEach((cell) => {
+      squaresClicked += cell[1]
+    })
+  })
+
+  if (squaresClicked === (gridHeight * gridWidth) - numberOfMines && !gameOver) {
+    gameOver = 'win'
+  }
+
+  console.log(numberOfMines, squaresClicked, gameOver)
   
   return {board: grid, gameOver};
   

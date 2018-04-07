@@ -6,6 +6,8 @@ import Board from './components/board.jsx'
 import BoardContainer from './containers/boardContainer'
 import GameInfoContainer from './containers/gameInfoContainer'
 import GameInfo from './components/gameinfo.jsx'
+import ResetButtons from './components/resetbuttons.jsx'
+import ResetButtonsContainer from './containers/resetButtonsContainer.js'
 
 const App = (props) => {
   // constructor(props) {
@@ -47,6 +49,9 @@ const App = (props) => {
           <GameInfoContainer />
         </header>
         <BoardContainer />
+        <h4>Start a new game:</h4>
+        <ResetButtonsContainer />
+
 
       </div>
     );

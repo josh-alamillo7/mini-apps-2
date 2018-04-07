@@ -8,8 +8,8 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 80px;
+  background-color: #333;
+  height: 70px;
   padding: 20px;
   color: white;
 }
@@ -33,16 +33,16 @@
 
 .square {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
 }
 
 .squareX {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: black;
@@ -50,8 +50,8 @@
 
 .square0 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: gray;
@@ -59,8 +59,8 @@
 
 .square1 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: blue;
@@ -68,8 +68,8 @@
 
 .square2 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: green;
@@ -77,8 +77,8 @@
 
 .square3 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: red;
@@ -86,8 +86,8 @@
 
 .square4 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: purple;
@@ -95,8 +95,8 @@
 
 .square5 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: teal;
@@ -104,8 +104,8 @@
 
 .square6 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: pink;
@@ -113,8 +113,8 @@
 
 .square7 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: yellow;
@@ -122,8 +122,8 @@
 
 .square8 {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-style: solid;
   border-size: 1px;
   color: indigo;
