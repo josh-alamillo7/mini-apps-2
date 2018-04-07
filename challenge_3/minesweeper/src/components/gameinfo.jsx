@@ -1,6 +1,6 @@
 const React = require('react')
 
-const gameInfo = ({ gameOver }) => {
+const GameInfo = ({ gameOver }) => {
   if (gameOver) {
     return (
     <div className="GameInfo">You lost 😢</div>)
@@ -10,4 +10,4 @@ const gameInfo = ({ gameOver }) => {
   
 }
 
-export default gameInfo
+export default GameInfo

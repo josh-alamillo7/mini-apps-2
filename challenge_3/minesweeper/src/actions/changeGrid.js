@@ -1,7 +1,7 @@
-const changeGrid = (grid) => {
+const changeGrid = (id) => {
   return ({
     'type': 'CHANGE_GRID',
-    grid
+    id
   })
 }
 

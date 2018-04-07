@@ -3,43 +3,52 @@ import logo from './logo.svg';
 import './App.css';
 import boardHelpers from './lib/boardHelpers'
 import Board from './components/board.jsx'
+import BoardContainer from './containers/boardContainer'
 import GameInfo from './components/gameinfo.jsx'
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      board: boardHelpers.makeMinesweeperBoard(16, 16, 50),
-      gameOver: false
-    }
-    this.handleSquareClick = this.handleSquareClick.bind(this);
-  }
+const App = (props) => {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     gameOver: false
+  //   }
+    // this.handleSquareClick = this.handleSquareClick.bind(this);
+  // }
 
-  handleSquareClick(e) {
-    if (this.state.gameOver) {
-      console.log('you lost already :(')
-      return
-    }
-    const paramValues = e.target.id.split(',')
-    const inputParams = [Number(paramValues[0]), Number(paramValues[1])]
-    const newGameInfo = boardHelpers.handleGridClick(this.state.board, inputParams)
-    this.setState({
-      board: newGameInfo.grid,
-      gameOver: newGameInfo.lost
-    })
-  }
+  // handleSquareClick(e) {
+  //   if (this.state.gameOver) {
+  //     return
+  //   }
+  //   const paramValues = e.target.id.split(',')
+  //   const inputParams = [Number(paramValues[0]), Number(paramValues[1])]
+  //   const newGameInfo = boardHelpers.handleGridClick(this.state.board, inputParams)
+  //   this.setState({
+  //     board: newGameInfo.grid,
+  //     gameOver: newGameInfo.gameOver
+  //   })
+  // }
 
-  render() {
+  // resetBoard(difficulty) {
+  //   const mapDifficultyToParams = {
+  //     'beg': [10, 10, 10],
+  //     'int': [16, 16, 50],
+  //     'exp': [24, 24, 99] 
+  //   }
+  //   this.setState = {
+  //     board: boardHelpers.makeMinesweeperBoard(16, 16, 50)
+  //   }
+  // }
+// 
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">MINESWEEPER</h1>
-          <GameInfo gameOver={this.state.gameOver} />
+          <GameInfo />
         </header>
-        <Board board={this.state.board} handleSquareClick={this.handleSquareClick}/>
+        <BoardContainer />
+
       </div>
     );
-  }
 }
 
 export default App;

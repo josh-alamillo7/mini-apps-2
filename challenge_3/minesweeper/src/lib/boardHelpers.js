@@ -1,10 +1,8 @@
 const handleGridClick = (grid, squareParams) => {
-
-  console.log(squareParams)
   
   let gridHeight = grid.length;
   let gridWidth = grid[0].length;
-  let lost = false;
+  let gameOver = false;
 
   const getSurroundingSquares = (params) => {
     const output = [];
@@ -20,15 +18,15 @@ const handleGridClick = (grid, squareParams) => {
   }
 
   if (squareParams[0] < 0 || squareParams[0] > gridHeight - 1) {
-    return {grid, lost}
+    return {board: grid, gameOver}
   }
   
   if (squareParams[1] < 0 || squareParams[1] > gridWidth - 1) {
-    return {grid, lost}
+    return {board: grid, gameOver}
   }
   
   if (grid[squareParams[0]][squareParams[1]][1] === 1) {
-    return {grid, lost}
+    return {board: grid, gameOver}
   }
   
   if (grid[squareParams[0]][squareParams[1]][0] === 'X') {
@@ -36,7 +34,7 @@ const handleGridClick = (grid, squareParams) => {
     for (let i = 0; i < gridHeight; i++) {
       for (let j = 0; j < gridWidth; j++) {
         grid[i][j][1] = 1;
-        lost = true;
+        gameOver = true;
       }
     } 
   }
@@ -57,7 +55,7 @@ const handleGridClick = (grid, squareParams) => {
     
   }
   
-  return {grid, lost};
+  return {board: grid, gameOver};
   
 }
 
