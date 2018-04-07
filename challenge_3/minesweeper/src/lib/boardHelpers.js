@@ -1,4 +1,6 @@
 const handleGridClick = (grid, squareParams) => {
+
+  console.log(squareParams)
   
   let gridHeight = grid.length;
   let gridWidth = grid[0].length;
@@ -114,6 +116,9 @@ const makeMinesweeperBoard = (height, width, mines) => {
   
   return board
 }
+
+module.exports.makeMinesweeperBoard = makeMinesweeperBoard;
+module.exports.handleGridClick = handleGridClick;
 
 
 

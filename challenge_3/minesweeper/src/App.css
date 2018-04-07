@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 20px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: 30px;
+}
+
+.GameInfo {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.square {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+}
+
+.squareX {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: black;
+}
+
+.square0 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: gray;
+}
+
+.square1 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: blue;
+}
+
+.square2 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: green;
+}
+
+.square3 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: red;
+}
+
+.square4 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: purple;
+}
+
+.square5 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: teal;
+}
+
+.square6 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: pink;
+}
+
+.square7 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: yellow;
+}
+
+.square8 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-size: 1px;
+  color: indigo;
+}
