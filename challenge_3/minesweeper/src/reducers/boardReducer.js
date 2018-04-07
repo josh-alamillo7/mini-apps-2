@@ -24,7 +24,15 @@ const boardReducer = (state = initialState, action) => {
     return {
       board: newGameInfo.board,
       gameOver: newGameInfo.gameOver}
-    
+  
+  switch(action.type) {
+    case 'CHANGE_GAME_LOSS':
+      return {
+        board: state.board,
+        gameOver: action.gameOver
+      }
+  }
+
   default:
     return state
   }

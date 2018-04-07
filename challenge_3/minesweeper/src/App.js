@@ -4,6 +4,7 @@ import './App.css';
 import boardHelpers from './lib/boardHelpers'
 import Board from './components/board.jsx'
 import BoardContainer from './containers/boardContainer'
+import GameInfoContainer from './containers/gameInfoContainer'
 import GameInfo from './components/gameinfo.jsx'
 
 const App = (props) => {
@@ -43,7 +44,7 @@ const App = (props) => {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">MINESWEEPER</h1>
-          <GameInfo />
+          <GameInfoContainer />
         </header>
         <BoardContainer />
 
